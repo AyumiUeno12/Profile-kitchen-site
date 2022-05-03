@@ -15,6 +15,8 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 h1,
@@ -81,6 +83,7 @@ a:active {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 15px;
+  grid-column: 1 /-1;
 }
 
 .site-title {
@@ -105,6 +108,7 @@ nav a:link:last-child {
 .main-img {
   position: relative;
   margin-bottom: 100px;
+  grid-column: 1 /-1;
 }
 
 button {
@@ -117,6 +121,10 @@ button {
   right: 10px;
 }
 
+article {
+  margin-bottom: 50px;
+}
+
 /* About area */
 
 .main-row {
@@ -124,11 +132,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
 }
 
 .profile-flex {
-  flex: 0;
+  /* flex: 0; */
 }
 
 .profile-main-img {
@@ -138,7 +145,7 @@ button {
 
 .profile-description {
   /* background-color: red; */
-  flex: 1;
+  /* flex: 1; */
   margin: 0 30px;
 }
 
@@ -169,7 +176,10 @@ li:last-child {
 /* New arrival area */
 
 .big-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 30px;
+  margin-bottom: 50px;
 }
 
 .aside-box {
@@ -177,7 +187,7 @@ li:last-child {
   border-top: 3px solid #8fbc8f;
   border-bottom: 3px solid #8fbc8f;
   padding: 30px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 .new-arrival-title {
@@ -186,7 +196,7 @@ li:last-child {
 
 .new-item {
   margin-right: 0;
-  display: flex;
+  /* display: flex; */
 }
 
 .new-arrival-item {
@@ -215,8 +225,8 @@ li:last-child {
 
 .product-section {
   /* background-color: pink; */
-  display: flex;
-  margin-bottom: 50px;
+  /* display: flex; */
+  /* margin-bottom: 50px; */
 }
 
 .plates {
@@ -257,4 +267,7 @@ li:last-child {
 footer {
   text-align: center;
   font-size: 14px;
+  grid-column: 1 /-1;
 }
+
+/* CSS Grid layout */

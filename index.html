@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Profilekitchen.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -13,116 +12,157 @@
   </head>
 
   <body>
-    <header id="header" class="wrapper">
-      <h1 class="site-title">Profile</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#product">Product</a>
-          </li>
-          <li>
-            <a href="blog.html">Blog</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="main-header">
+        <h1 class="site-title">Profile</h1>
+        <nav class="header-nav">
+          <a href="#about">About</a>
+          <a href="#product">Product</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </header>
 
-    <main>
-      <div id="main-image">
-        <img src="img/main-3.jpg" alt="plates main image" />
-      </div>
-      <button>❤️Like</button>
-
-      <section id="about" class="wrapper">
-        <h2 class="section-title">About</h2>
-        <div class="content">
-          <div class="profile-img">
-            <img
-              id="profile-img"
-              src="img/about.jpg"
-              alt="Profile kitchen image"
-            />
-          </div>
-          <div class="profile-description">
-            <h3>Profile Kitchen</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. 
-            </p>
-            
-            <h4>Why should you shop at Profile kitchen? </h4>
-            <ol>
-              <li>Local!</li>
-              <li>Organic material!</li>
-              <li>Friendly staff!</li>
-            </ol>
-          </div>
+      <main>
+        <div class="main-img">
+          <img src="img/main-3.jpg" alt="plates main image" width="1200" />
+          <button>❤️Like</button>
         </div>
-      </section>
 
-      <article id="product" class="wrapper">
-        <h2 class="section-title">Product</h2>
-        <ul>
-          <li>
-            <img src="img/plate-1.jpg" alt="plates-image-1" />
-            <h3 class="content-title">Fractal Bowl, Set of 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </li>
-          <li>
-            <img src="img/plate-2.jpg" alt="plates-image-2" />
-            <h3 class="content-title">Clay Plate, Yellow</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </li>
-          <li>
-            <img src="img/plate-3.jpg" alt="plates-image-3" />
-            <h3 class="content-title">Remy Oliver Cast Iron Casserole, 7.2L</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </li>
-        </ul>
-      </article>
+        <div class="big-box">
+          <section>
+            <div class="main-row">
+              <div class="profile-flex">
+                <h2>About</h2>
+                <img src="img/about.jpg" alt="Profile kitchen image"
+                width=230px" class="profile-main-img" />
+              </div>
 
-      <aside>
-        <h3>New Arrivals</h3>
+              <div class="profile-description">
+                <div class="profile-kitchen-top">
+                  <h3 class="big-p">Profile Kitchen</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
 
-        <ul>
-          <li>
-            <img src="img/lantern.jpg" alt="Red patio lantern" width="75" heigh="75" />
-            <a href="#">9" Lighted Red Water Lantern</a>
-            <p>$72.95</p>
+                <h3 class="big-w">Why should you shop at Profile kitchen?</h3>
+                <ol>
+                  <li>Local!</li>
+                  <li>Organic material!</li>
+                  <li>Friendly staff!</li>
+                </ol>
+              </div>
+            </div>
+          </section>
 
-            <li>
-              <img src="img/gravy.jpg" alt="White gravy bowl" width="75" heigh="75" />
-              <a href="#">Le Creuset Gravy Bowl</a>
-              <p>$45.00</p>
-            </li>
+          <aside class="aside-box">
+            <h3 class="new-arrival-title big-n">New Arrivals</h3>
 
-            <li>
-              <img src="img/casserole.jpg" alt="Black cast iron casserole" width="75" heigh="75" />
-              <a href="#">Cast Iron Casserole Serving Dish - Black w/Black Trim</a>
-              <p>$32.95</p>
-            </li>
+            <ul class="new-arrival-items">
+              <li class="new-arrival-item">
+                <img
+                  src="img/lantern.jpg"
+                  alt="Red patio lantern"
+                  width="75"
+                  class="new-item"
+                />
+                <div>
+                  <a href="#" class="arrivallink"
+                    >9" Lighted Red Water Lantern</a
+                  >
+                  <p class="arrival-p">$72.95</p>
+                </div>
+              </li>
 
-          </li>
-        </ul>
-      </aside>
-    </main>
+              <li class="new-arrival-item">
+                <img
+                  src="img/gravy.jpg"
+                  alt="White gravy bowl"
+                  width="75"
+                  heigh="75"
+                  class="new-item"
+                />
+                <div>
+                  <a href="#" class="arrivallink">Le Creuset Gravy Bowl</a>
+                  <p class="arrival-p">$45.00</p>
+                </div>
+              </li>
 
-    <footer id="footer">
-      <p>&copy; 2022 Profile kitchen.com</p>
-    </footer>
+              <li class="new-arrival-item">
+                <img
+                  src="img/casserole.jpg"
+                  alt="Black cast iron casserole"
+                  width="75"
+                  heigh="75"
+                  class="new-item"
+                />
+                <div>
+                  <a href="#" class="arrivallink"
+                    >Cast Iron Casserole Serving Dish</a
+                  >
+                  <p class="arrival-p">$32.95</p>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+
+        <article>
+          <h2 class="section-title">Product</h2>
+
+          <div class="product-section">
+            <ul class="plates">
+              <li class="redplate">
+                <img
+                  src="img/plate-1.jpg"
+                  alt="plates-image-1"
+                  class="sample-plate"
+                />
+                <h3 class="content-title">Fractal Bowl, Set of 3</h3>
+                <p class="content-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </li>
+
+              <li class="yellowplate">
+                <img
+                  src="img/plate-2.jpg"
+                  alt="plates-image-2"
+                  class="sample-plate"
+                />
+                <h3 class="content-title">Clay Plate, Yellow</h3>
+                <p class="content-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </li>
+
+              <li class="orangeplate">
+                <img
+                  src="img/plate-3.jpg"
+                  alt="plates-image-3"
+                  class="sample-plate"
+                />
+                <h3 class="content-title">
+                  Remy Oliver Cast Iron Casserole, 7.2L
+                </h3>
+                <p class="content-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </main>
+
+      <footer>
+        <p>&copy; 2022 Profile kitchen.com</p>
+      </footer>
+    </div>
   </body>
 </html>

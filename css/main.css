@@ -128,12 +128,20 @@ nav a:link:last-child {
   margin-right: 0;
 }
 
+article {
+  margin-bottom: 140px;
+}
+
 /* main image area */
 
 .main-img {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   grid-column: 1 /-1;
+}
+
+.cover-img {
+  border-radius: 10px;
 }
 
 button {
@@ -200,7 +208,7 @@ li:last-child {
   display: grid;
   grid-template-columns: 1fr 300px;
   column-gap: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .aside-box {
@@ -217,6 +225,7 @@ li:last-child {
 
 .new-item {
   margin-right: 0;
+  border-radius: 10px;
   /* display: flex; */
 }
 
@@ -251,6 +260,7 @@ li:last-child {
   color: #fff;
   padding: 24px;
   margin-bottom: 100px;
+  border-radius: 10px;
 }
 
 .testimonial-box {
@@ -275,27 +285,36 @@ li:last-child {
   width: 100%;
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
 }
+
 .testimonial-text {
   font-style: italic;
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 15px;
+  color: #e6fcf5;
 }
 
 .testimonial-author {
   font-size: 16px;
+  color: #c3fae8;
 }
 
 /* Product area */
 
 .sample-plate {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 32px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  /* 12 / 16 / 24 / 32 */
 }
 
 .content-title {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  /* 12 / 16 / 24 */
 }
 
 .content-title,
@@ -305,11 +324,20 @@ li:last-child {
 }
 
 .content-p {
-  margin-bottom: 15px;
+  margin: 0 32px 12px 32px;
+  /* 12 / 16 / 24 / 32 */
 }
 
 .plates {
   margin: 0;
+  border-radius: 10px;
+  /* background-color: red; */
+  box-shadow: 0 10px 30px 0 rgba(24, 23, 23, 0.112);
+}
+
+.plate-price {
+  margin-bottom: 32px;
+  /* 12 / 16 / 24 / 32 */
 }
 
 /* .cart-btn {
